@@ -1,38 +1,296 @@
-.App {
-  text-align: center;
+/* .wrap{
+    background: #0A2640;
+    width: 100%;
+    height: 100vh;
+} */
+.toggle-btn{
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  outline: none;
+}
+.numbers-section, .hero-section, .values-section {
+  background: #0A2640;
+}
+.hero-section{
+  height: 100vh;
+  width: 100%;
+  /* position: relative; */
+
+}
+.custom-link {
+  width: 50%;
+  justify-content: space-between;
+}
+.res-logo {
+  display: none;
+}
+.logo-main {
+  display: inline-block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.custom-button {
+  padding: 1rem;
+}
+.hero-wrap {
+margin-top: 6rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.hero-caption {
+  width: 70%;
+  font-size: 4rem;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+}
+.hero-subtext {
+width: 65%;
+}
+.pic-grid {
+  height: 20rem;
+  width: 100%;
+  position: relative;
+  margin-bottom: 19rem;
+}
+.pictures {
+  position: absolute;
+  top: -5rem;
+  right: 6.6rem;
+}
+.custom-img {
+  max-width: 80% !important;
+}
+.custom-md{
+  max-width: 100% !important;
+}
+.story-wrap {
+  width: 70%;
+  margin: auto;
+}
+.numbers-headline,.story-headline {
+  font-size: 2.5rem;
+}
+.story-section {
+  margin-bottom: 7rem;
+}
+.story-headline { 
+  color: black;
+  line-height: 3.5rem;
+}
+.story-text {
+  line-height: 32px;
+}
+.numbers-section {
+  height: fit-content;
+  width: 100%;
+}
+.numbers-section .container .row{
+  width: 100%;
+}
+.numbers-headline {
+  width: 70%;
+}
+
+.numbers {
+  font-size: 3.5rem;
+  color: #4FE9A4;
+}
+.team-wrap {
+  margin: 5rem 0;
+}
+.team-text, .team {
+  width: 100%;
+}
+.text-container, .values-container {
+  width: 70%;
+  margin: auto;
+}
+.values-section {
+  padding: 5rem 0;
+}
+.action{
+  width: 100%;
+  height: 20rem;
+  margin-top: 5rem;
+}
+.action .container {
+  background: #0A2640;
+  height: 20rem;
+  overflow: hidden;
+}
+.action h4, .input {
+  width: 60%;
+}
+.input button, .hiring {
+  background: #4FE9A4;
+  border: 1px solid #4FE9A4;
+}
+.input input {
+  display: block;
+width: 50%;
+padding: .5rem 1.25rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+outline: none;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+}
+.ellipse {
+  top: -1rem;
+}
+.slick {
+  z-index: 10;
+  height: inherit;
+}
+.foot-wrap {
+  width: 100%;
+  height: 15rem;
+}
+.foot-wrap .container, .foot-wrap .container .row{
+  height: 100%;
+}
+.footer-abt{
+  line-height: 2rem;
+}
+.hiring {
+  margin-bottom: 1rem;
+  font-size: smaller;
+}
+.copyright {
+  margin-bottom: 4rem;
+}
+@media (max-width: 1000px) {
+  .custom-link {
+      width: 100%
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .hero-section {
+      height: 40rem;
   }
-  to {
-    transform: rotate(360deg);
+  .hero-caption {
+      width: 100%;
+font-size: 3rem;
+line-height: 4rem;
   }
+  .pictures {
+      position: unset;
+  }
+  .pic-grid {
+      margin: 6rem 0 10rem;
+  }
+  .story-headline {
+      font-size: 1.7rem;
+      line-height: 2.5rem;
+  }
+  .story-text {
+      line-height: 25px;
+  }
+  .input input{
+      width: 60%;
+  }
+   .story-wrap, .numbers-headline, .text-container, .values-container, .action h4, .input{
+      width: 100%
+  }
+  .numbers-headline {
+      font-size: 2.3rem;
+  }
+  .numbers {
+      font-size: 3rem;
+  }
+  .foot-wrap {
+      height: auto;
+  }
+  .footer-abt {
+      line-height: 1.5rem;
+      font-size: 15px;
+    }
+}
+@media (max-width: 500px) {
+  .hero-wrap {
+      margin-top: 3rem;
+  }
+  .hero-section {
+      height: 90vh;
+  }
+  .hero-caption {
+      width: 100%;
+      font-size: 2.6rem;
+      line-height: 3.5rem;
+  }
+  .hero-subtext {
+      width: 100%;
+  }
+  .res-logo {
+      display: block;
+  }
+  .logo-main {
+      display: none;
+  }
+  
+  .pic-grid {
+      height: auto;
+      margin: 7rem auto;
+  }
+  .middle {
+      height: 26rem;
+      margin: 1.2rem auto;
+  }
+  .middle img {
+      height: inherit;
+  }
+ 
+  .story-section {
+      margin-bottom: 5rem;
+  }
+  .story-headline {
+      font-size: 1.5rem;
+      line-height: 2rem;
+  }
+  .story-text {
+      line-height: 25px;
+  }
+  .numbers-headline {
+      font-size: 1.6rem;
+  }
+  .numbers {
+      font-size: 3rem;
+  }
+  .member, .title, .body {
+      text-align: center;
+  }
+  .member {
+      margin-bottom: 1.5rem;
+  }
+  .member img {
+      margin-bottom: .5rem !important;
+  }
+  .member p {
+      margin-bottom: 0;
+  }
+  .value-img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+  }
+  .action h4 {
+      font-size: 1.5rem !important;
+  }
+  .input {
+      flex-direction: column;
+  }
+  .input input {
+      padding: .35rem 1.25rem;
+      margin-bottom: .5rem;
+      width: 100%;
+  }
+  .input button {
+      font-size: smaller;
+      padding: .5rem 1rem  !important;
+  }
+ 
+  .shift {
+      margin-bottom: 1rem;
+  }
+  
+  
+
 }
